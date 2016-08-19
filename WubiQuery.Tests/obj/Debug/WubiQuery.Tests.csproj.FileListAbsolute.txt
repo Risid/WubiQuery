@@ -1,0 +1,15 @@
+E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery.Tests\bin\Debug\WubiQuery.Tests.dll
+E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery.Tests\bin\Debug\WubiQuery.Tests.pdb
+E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery.Tests\bin\Debug\Microsoft.Pex.Framework.dll
+E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery.Tests\bin\Debug\WubiQuery.exe
+E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery.Tests\bin\Debug\Microsoft.ExtendedReflection.Reasoning.dll
+E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery.Tests\bin\Debug\Microsoft.ExtendedReflection.dll
+E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery.Tests\bin\Debug\WubiQuery.pdb
+E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery.Tests\bin\Debug\Microsoft.Pex.Framework.xml
+E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery.Tests\bin\Debug\zh-Hans\Microsoft.Pex.Framework.resources.dll
+E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery.Tests\bin\Debug\zh-Hans\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery.Tests\bin\Debug\zh-Hans\Microsoft.ExtendedReflection.resources.dll
+E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery.Tests\obj\Debug\WubiQuery.Tests.csprojResolveAssemblyReference.cache
+E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery.Tests\obj\Debug\WubiQuery.Tests.dll
+E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery.Tests\obj\Debug\WubiQuery.Tests.pdb
