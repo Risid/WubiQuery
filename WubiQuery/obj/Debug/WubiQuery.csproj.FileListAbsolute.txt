@@ -14,11 +14,8 @@ E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery\obj\Debug\WubiQuery
 E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery\obj\Debug\WubiQuery.csproj.GenerateResource.Cache
 E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery\obj\Debug\WubiQuery.exe
 E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery\obj\Debug\WubiQuery.pdb
-E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery\obj\Debug\WubiQuery.csprojResolveAssemblyReference.cache
 E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery\obj\Debug\GeneratedInternalTypeHelper.g.cs
 E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery\obj\Debug\Loading.baml
 E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery\obj\Debug\LoadingArcs.baml
 E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery\obj\Debug\Styles.baml
-E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery\bin\Debug\HtmlAgilityPack.pdb
-E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery\bin\Debug\HtmlAgilityPack.xml
 E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery\obj\Debug\ReadOnlyTextBox.baml

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 
 namespace WubiQuery
@@ -21,23 +16,23 @@ namespace WubiQuery
         public static readonly DependencyProperty SpeedRatioProperty =
             DependencyProperty.Register("SpeedRatio", typeof(double), typeof(LoadingIndicator), new PropertyMetadata(1d, (o, e) =>
             {
-                LoadingIndicator li = (LoadingIndicator)o;
+                var li = (LoadingIndicator)o;
 
-                if (li.PART_Border == null || li.IsActive == false)
+                if (li.PartBorder == null || li.IsActive == false)
                 {
                     return;
                 }
 
-                foreach (VisualStateGroup group in VisualStateManager.GetVisualStateGroups(li.PART_Border))
+                var visualStateGroups = VisualStateManager.GetVisualStateGroups(li.PartBorder);
+                if (visualStateGroups == null) return;
+                foreach (VisualStateGroup group in visualStateGroups)
                 {
-                    if (group.Name == "ActiveStates")
+                    if (@group.Name != "ActiveStates") continue;
+                    foreach (VisualState state in @group.States)
                     {
-                        foreach (VisualState state in group.States)
+                        if (state.Name == "Active")
                         {
-                            if (state.Name == "Active")
-                            {
-                                state.Storyboard.SetSpeedRatio(li.PART_Border, (double)e.NewValue);
-                            }
+                            state.Storyboard.SetSpeedRatio(li.PartBorder, (double)e.NewValue);
                         }
                     }
                 }
@@ -51,31 +46,31 @@ namespace WubiQuery
             {
                 LoadingIndicator li = (LoadingIndicator)o;
 
-                if (li.PART_Border == null)
+                if (li.PartBorder == null)
                 {
                     return;
                 }
 
                 if ((bool)e.NewValue == false)
                 {
-                    VisualStateManager.GoToElementState(li.PART_Border, "Inactive", false);
-                    li.PART_Border.Visibility = Visibility.Collapsed;
+                    VisualStateManager.GoToElementState(li.PartBorder, "Inactive", false);
+                    li.PartBorder.Visibility = Visibility.Collapsed;
                 }
                 else
                 {
-                    VisualStateManager.GoToElementState(li.PART_Border, "Active", false);
-                    li.PART_Border.Visibility = Visibility.Visible;
+                    VisualStateManager.GoToElementState(li.PartBorder, "Active", false);
+                    li.PartBorder.Visibility = Visibility.Visible;
 
-                    foreach (VisualStateGroup group in VisualStateManager.GetVisualStateGroups(li.PART_Border))
+                    var visualStateGroups = VisualStateManager.GetVisualStateGroups(li.PartBorder);
+                    if (visualStateGroups == null) return;
+                    foreach (VisualStateGroup group in visualStateGroups)
                     {
-                        if (group.Name == "ActiveStates")
+                        if (@group.Name != "ActiveStates") continue;
+                        foreach (VisualState state in @group.States)
                         {
-                            foreach (VisualState state in group.States)
+                            if (state.Name == "Active")
                             {
-                                if (state.Name == "Active")
-                                {
-                                    state.Storyboard.SetSpeedRatio(li.PART_Border, li.SpeedRatio);
-                                }
+                                state.Storyboard.SetSpeedRatio(li.PartBorder, li.SpeedRatio);
                             }
                         }
                     }
@@ -83,7 +78,7 @@ namespace WubiQuery
             }));
 
         // Variables
-        protected Border PART_Border;
+        protected Border PartBorder;
 
         /// <summary>
         /// Get/set the speed ratio of the animation.
@@ -111,35 +106,27 @@ namespace WubiQuery
         {
             base.OnApplyTemplate();
 
-            PART_Border = (Border)GetTemplateChild("PART_Border");
+            PartBorder = (Border)GetTemplateChild("PART_Border");
 
-            if (PART_Border != null)
-            {
-                VisualStateManager.GoToElementState(PART_Border, (this.IsActive ? "Active" : "Inactive"), false);
-                foreach (VisualStateGroup group in VisualStateManager.GetVisualStateGroups(PART_Border))
+            if (PartBorder == null) return;
+            VisualStateManager.GoToElementState(PartBorder, (IsActive ? "Active" : "Inactive"), false);
+            var visualStateGroups = VisualStateManager.GetVisualStateGroups(PartBorder);
+            if (visualStateGroups != null)
+                foreach (VisualStateGroup group in visualStateGroups)
                 {
-                    if (group.Name == "ActiveStates")
+                    if (@group.Name != "ActiveStates") continue;
+                    foreach (VisualState state in @group.States)
                     {
-                        foreach (VisualState state in group.States)
+                        if (state.Name == "Active")
                         {
-                            if (state.Name == "Active")
-                            {
-                                state.Storyboard.SetSpeedRatio(PART_Border, this.SpeedRatio);
-                            }
+                            state.Storyboard.SetSpeedRatio(PartBorder, SpeedRatio);
                         }
                     }
                 }
 
-                PART_Border.Visibility = (this.IsActive ? Visibility.Visible : Visibility.Collapsed);
-            }
+            PartBorder.Visibility = (IsActive ? Visibility.Visible : Visibility.Collapsed);
         }
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="WubiQuery.LoadingIndicator"/> class.
-        /// </summary>
-        public LoadingIndicator()
-        {
-        }
     }
 
 }

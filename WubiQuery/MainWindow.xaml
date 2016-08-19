@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WubiQuery"
         mc:Ignorable="d"
-        Title="MainWindow" Height="360" Width="415" Background="White" MinWidth="415" MinHeight="360" MaxWidth="560">
+        Title="字根查询" Height="360" Width="415" Background="White" MinWidth="415" MinHeight="360" MaxWidth="560" Closed="WindowClose" Icon="AppIcon.png">
 
     <Grid >
         <Grid.ColumnDefinitions>

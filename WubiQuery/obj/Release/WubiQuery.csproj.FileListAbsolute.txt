@@ -1,0 +1,9 @@
+E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery\bin\Release\WubiQuery.exe.config
+E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery\obj\Release\ReadOnlyTextBox.baml
+E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery\obj\Release\Scroller.baml
+E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery\obj\Release\Simple Styles.baml
+E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery\obj\Release\MainWindow.g.cs
+E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery\obj\Release\App.g.cs
+E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery\obj\Release\GeneratedInternalTypeHelper.g.cs
+E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery\obj\Release\WubiQuery_MarkupCompile.cache
+E:\Documents\Visual Studio 2015\Projects\WubiQuery\WubiQuery\obj\Release\WubiQuery_MarkupCompile.lref
